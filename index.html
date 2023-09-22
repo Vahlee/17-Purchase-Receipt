@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Receipt</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color:#A4D0A4;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bolder;
+        }
+        h4 { 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .order {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .items {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+        .item {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .quantity, .product, .price {
+            padding: 8px;
+            text-align: left;
+        }
+        .thank-you {
+            text-align: center;
+            margin-top: 20px;
+        
+        }
+        body {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Your Order Receipt</div>
+            <h4>#456-113/22-09-23</h4>
+        </div>
+        <table class="order">
+            <tr class="items">
+                <td class="quantity">Quantity</td>
+                <td class="product">Product</td>
+                <td class="price">Price</td>
+            </tr>
+            <tr class="item">
+                <td class="quantity">2</td>
+                <td class="product">Cup</td>
+                <td class="price">3500</td>
+            </tr>
+            <tr class="item">
+                <td class="quantity">1</td>
+                <td class="product">Bag</td>
+                <td class="price">7999</td>
+            </tr>
+            <tr class="item">
+                <td class="quantity">10</td>
+                <td class="product">Cacapi-Choco</td>
+                <td class="price">5000</td>
+            </tr>
+            <tr class="item">
+                <td class="quantity">Total</td>
+                <td class="product"></td>
+                <td class="price">16499</td>
+            </tr>
+        </table>
+        <div class="thank-you">
+            <h2>Thank you.</h2>
+        </div>
+    </div>
+</body>
+</html>
